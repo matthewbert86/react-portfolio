@@ -2,7 +2,11 @@ import React from "react";
 import { Jumbotron as Jumbo, Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 import matt from "../assets/matt.jpg";
-
+import { 
+    faGithub, 
+    faTwitter, 
+    faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Styles = styled.div`
   .jumbo {
     background-color: white;
@@ -29,6 +33,11 @@ const Styles = styled.div`
     padding-left: 20px;
   }
 
+  .icons {
+      font-size: 50px;
+      padding-left: 10px;
+  }
+
  
 `;
 
@@ -43,7 +52,17 @@ export const Jumbotron = () => (
                  </Col>
                  <Col lg={8}>
                    <h1 className="headline">Matt Learns From Teaching</h1>
-                   <p>I am a Full Stack JavaScript developer. The best way I have been able to learn is to teach. I am using this website to showcase my projects, and blog tutorials on how they were built.</p>
+                   <p>
+                     I am a Full Stack JavaScript developer. The best way I have
+                     been able to learn is to teach. I am using this website to
+                     showcase my projects, and blog tutorials on how they were
+                     built.
+                   </p>
+                   <p>
+                     <FontAwesomeIcon icon={faGithub} className="icons" />
+                     <FontAwesomeIcon icon={faTwitter} className="icons" />
+                     <FontAwesomeIcon icon={faInstagram} className="icons" />
+                   </p>
                  </Col>
                </Row>
              </Container>
