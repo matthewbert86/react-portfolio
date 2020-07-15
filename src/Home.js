@@ -12,9 +12,23 @@ const Styles = styled.div`
 }
 
 .home-container {
-  margin: 0 10rem;
+  margin: 0 auto;
+  justify-content: center;
 }
 
+.cardOne {
+  background-color: #171f5e;
+  margin: 15px;
+  border: 8px solid #f5ad31;
+  border-radius: 25px;
+}
+
+.cardTwo {
+  background-color: #171f5e;
+  margin: 15px;
+  border: 8px solid #f5ad31;
+  border-radius: 25px;
+}
 
 
 `
@@ -25,20 +39,17 @@ export const Home = () => (
     <Jumbotron />
     <Container fluid className="homeStyle">
         <Row className="home-container">
-           <h2>Matthew Bert</h2>
-           <p>
-             I'm baby vHS art party pork belly, health goth echo park meh vegan
-             single-origin coffee typewriter put a bird on it raw denim. Tumblr
-             typewriter williamsburg mustache chia. Plaid deep v vinyl lo-fi
-             cliche ethical you probably haven't heard of them tousled
-             meditation church-key disrupt fam. Raw denim venmo plaid
-             asymmetrical next level XOXO intelligentsia hella semiotics iPhone
-             four dollar toast. Offal messenger bag master cleanse tattooed
-             schlitz raclette enamel pin cloud bread banjo forage street art
-             biodiesel try-hard. IPhone lumbersexual lyft tumblr, roof party
-             tousled tote bag fixie mixtape YOLO plaid photo booth.
-           </p>
-        </Row>
+          <Col lg={5} className="cardOne">
+            <h1 className="headline">Blog</h1>
+          </Col>
+          <Col lg={5} className="cardTwo">
+            
+            <h1 className="subHeading">Resources</h1>
+            <p>
+              New Website launching August 2020!
+                   </p>
+          </Col>
+          </Row>
     </Container>
          </div>
   </Styles>

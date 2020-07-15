@@ -5,7 +5,8 @@ import geekBrain from "../assets/geekBrain.svg";
 import { 
     faFacebook, 
     faTwitter, 
-    faInstagram } from "@fortawesome/free-brands-svg-icons";
+    faInstagram,
+    faMedium } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Styles = styled.div`
   .jumbo {
@@ -92,6 +93,7 @@ export const Jumbotron = () => (
                      <FontAwesomeIcon icon={faFacebook} className="icons" />
                     <FontAwesomeIcon icon={faInstagram} className="icons" />
                      <FontAwesomeIcon icon={faTwitter} className="icons" />
+                    <FontAwesomeIcon icon={faMedium} className="icons" />
                    </p>
                  </Col>
                </Row>
