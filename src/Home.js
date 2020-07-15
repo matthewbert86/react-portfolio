@@ -1,7 +1,30 @@
 import React from 'react'
+import { Jumbotron } from "./components/Jumbotron";
+import { Container, Row, Col } from "react-bootstrap";
+import styled from "styled-components";
+
+const Styles = styled.div`
+
+.homeStyle {
+  background-color: white
+  margin-top: -5px;
+  
+}
+
+.home-container {
+  margin: 0 10rem;
+}
+
+
+
+`
 
 export const Home = () => (
+  <Styles>
          <div>
+    <Jumbotron />
+    <Container fluid className="homeStyle">
+        <Row className="home-container">
            <h2>Matthew Bert</h2>
            <p>
              I'm baby vHS art party pork belly, health goth echo park meh vegan
@@ -15,5 +38,8 @@ export const Home = () => (
              biodiesel try-hard. IPhone lumbersexual lyft tumblr, roof party
              tousled tote bag fixie mixtape YOLO plaid photo booth.
            </p>
+        </Row>
+    </Container>
          </div>
+  </Styles>
        );

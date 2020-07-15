@@ -5,17 +5,25 @@ import styled from "styled-components";
 
 const Styles = styled.div`
   .navbar {
-    background-color: #222;
+    background-color: #F5AD28;
+    padding: 10px 7rem;
   }
   .brand {
       font-size: 1.8rem;
       font-weight: bold;
   }
+  .nav-item{
+    padding: 0 10px;
+  }
+
   a,
   .navbar-brand,
   .navbar-nav .nav-link {
-    color: #bbb;
+    color: #171f5e;
     font-weight: bold;
+    font-family: orbitron;
+    font-size: 30px;
+    padding: 0 3px;
     &:hover {
       color: white;
       text-decoration: none;
@@ -26,7 +34,7 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/" className="brand">The Real Matt Bert</Navbar.Brand>
+      <Navbar.Brand href="/" className="brand">Mental Geek</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">

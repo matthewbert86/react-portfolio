@@ -9,13 +9,14 @@ import { NavigationBar } from "./components/NavigationBar";
 import { Jumbotron } from "./components/Jumbotron";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <Router>
           <NavigationBar />
-          <Jumbotron />
+          
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />

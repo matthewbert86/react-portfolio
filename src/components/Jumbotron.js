@@ -1,42 +1,74 @@
 import React from "react";
 import { Jumbotron as Jumbo, Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
-import matt from "../assets/matt.jpg";
+import geekBrain from "../assets/geekBrain.svg";
 import { 
-    faGithub, 
+    faFacebook, 
     faTwitter, 
     faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Styles = styled.div`
   .jumbo {
-    background-color: white;
+    background-color: #f2f4f5;
     color: black;
     padding: 20px 0 0 0;
+   
+
+  }
+
+  .mainStyle{
+    background-color: #f2f4f5;
   }
 
   .show-container {
     width: 100%;
+    padding: 0 40px;
+    background-color: #f2f4f5;
   }
 
   .logo {
-    width: 375px;
+    width: 550px;
     text-align: center;
+    margin-top: -10%;
+    margin-left: -20%;
   }
 
   .headline {
     text-align: center;
     padding-top: 10px;
     padding-left: 20px;
+    font-family: orbitron;
+    font-weight: bold;
+    font-size: 6.1rem;
+    margin-bottom: -8px;
+  }
+
+  .subHeading {
+    text-align: center;
+    padding-left: 20px;
+    font-family: orbitron;
+    font-weight: bold;
+    font-size: 2.5rem;
   }
   p {
     text-align: center;
+    padding-top: 20px;
     padding-left: 20px;
+    font-size: 28px;
+    color: #2178be;
   }
 
   .icons {
-      font-size: 50px;
+      font-size: 70px;
       padding-left: 10px;
   }
+
+
+
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;
+}
 
  
 `;
@@ -45,23 +77,21 @@ export const Jumbotron = () => (
          <Styles>
            <Jumbo fluid className="jumbo">
              <div className="overlay"></div>
-             <Container>
+             <Container fluid className="mainStyle">
                <Row className="show-container">
                  <Col lg={4}>
-                   <img src={matt} alt="Logo" className="logo" />
+                   <img src={geekBrain} alt="Logo" className="logo" />
                  </Col>
                  <Col lg={8}>
-                   <h1 className="headline">Matt Learns From Teaching</h1>
+                   <h1 className="headline">Mental Geek</h1>
+                   <h3 className="subHeading">A Mental Health Community</h3>
                    <p>
-                     I am a Full Stack JavaScript developer. The best way I have
-                     been able to learn is to teach. I am using this website to
-                     showcase my projects, and blog tutorials on how they were
-                     built.
+                     New Website launching August 2020!
                    </p>
                    <p>
-                     <FontAwesomeIcon icon={faGithub} className="icons" />
+                     <FontAwesomeIcon icon={faFacebook} className="icons" />
+                    <FontAwesomeIcon icon={faInstagram} className="icons" />
                      <FontAwesomeIcon icon={faTwitter} className="icons" />
-                     <FontAwesomeIcon icon={faInstagram} className="icons" />
                    </p>
                  </Col>
                </Row>
