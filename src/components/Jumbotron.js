@@ -13,11 +13,9 @@ const Styles = styled.div`
     background-color: #f2f4f5;
     color: black;
     padding: 20px 0 0 0;
-   
-
   }
 
-  .mainStyle{
+  .mainStyle {
     background-color: #f2f4f5;
   }
 
@@ -31,7 +29,8 @@ const Styles = styled.div`
     width: 550px;
     text-align: center;
     margin-top: -10%;
-    margin-left: -20%;
+    margin-left: -8%;
+    padding-left: 10px;
   }
 
   .headline {
@@ -60,18 +59,66 @@ const Styles = styled.div`
   }
 
   .icons {
-      font-size: 70px;
-      padding-left: 10px;
+    font-size: 70px;
+    padding-left: 10px;
   }
 
-
-
-@media (min-width: 1200px)
-.container, .container-lg, .container-md, .container-sm, .container-xl {
+  @media (min-width: 1200px) .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
     max-width: 100%;
-}
+  }
 
- 
+  @media only screen and (max-width: 600px) {
+    .jumbo {
+      background-color: #f2f4f5;
+      color: black;
+      margin: 0 auto !important;
+      padding: 0 auto !important;
+    }
+
+    .mainStyle {
+      background-color: #f2f4f5;
+    }
+
+    .show-container {
+      width: 100%;
+      margin: 0 auto !important;
+      padding: 0;
+      background-color: #f2f4f5;
+    }
+
+    .logo {
+      width: 300px;
+      margin: 0 35px !important;
+      padding-left: 20px;
+    }
+
+    .headline {
+      
+      font-family: orbitron;
+      font-weight: bold;
+      font-size: 2.7rem;
+      padding-bottom: 20px;
+      margin-top: -15%;
+    }
+
+    .subHeading {
+      text-align: center;
+      
+      font-family: orbitron;
+      font-weight: bold;
+      font-size: 1.9rem;
+    }
+    p {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 20px;
+      color: #2178be;
+    }
+  }
 `;
 
 export const Jumbotron = () => (

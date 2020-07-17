@@ -30,8 +30,13 @@ const Styles = styled.div`
   border-radius: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
-`
+`;
 
 export const Home = () => (
   <Styles>
